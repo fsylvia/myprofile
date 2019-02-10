@@ -1,0 +1,202 @@
+{
+	"personal": {
+		"name": "Flora Sylvia Christopher",
+		"visa": "Authorized to work in UK",
+		"location": "Basildon, Essex",
+		"email": "flora@fsylvia.com",
+		"contactNo": "0704509536",
+		"pitch": ["Java based web developer with strong experience in Spring framework [Spring Boot, Spring MVC]",
+			"hibernate. Have led small teams in their day to day deliverables."
+		],
+		"title": "Experienced Java based Web developer"
+	},
+	"education": [{
+		"name": "PSG college of technology",
+		"from": "August 1999",
+		"to": "April 2004",
+		"degree": "Bachelor of Engineering",
+		"stream": "Electrical and Electronics",
+		"grade": "9.05"
+	}],
+	"company": [{
+			"name": "Cognizant Technology Solutions",
+			"from":"September 2006",
+			"to":"January 2014",
+			"role": [{
+					"name": "Developer",
+					"from": "September 2006",
+					"to": "April 2011"
+				},
+				{
+					"name": "Senior Developer",
+					"from": "May 2011",
+					"to": "November 2013"
+				},
+				{
+					"name": "Manager",
+					"from": "December 2013",
+					"to": "January 2014"
+				}
+			],
+			"responsibilities": "Test data",
+			"project": [{
+					"name": "Next Gen",
+					"client": "Intuit",
+					"from": "April 2012",
+					"to": "January 2014",
+					"skill": [
+						{"group": "Language","name": "Java"},
+						{"group": "Library","name": "Junit"},
+						{"group": "Library","name": "XPath"},
+						{"group": "Library","name": "Jackson"},
+						{"group": "Library","name": "JaxRS"},
+						{"group": "Tool-CI","name": "CodePro"},
+						{"group": "Tool-CI","name": "Sonarqube"},
+						{"group": "IDE","name": "Eclipse"},
+						{"group": "Tool-Build-Script","name": "Maven"}
+					],
+					"responsibilities": ["Develop and build", "Unit Test"]
+				},
+				{
+					"name": "Oasis HADR",
+					"client": "Intuit",
+					"from": "May 2011",
+					"to": "October 2012",
+					"skill": [
+						{"group": "Language","name": "Java"},
+						{"group": "Framework", "name":"Spring"},
+						{"group": "Library", "name":"JSP"},
+						{"group": "Library","name": "Hibernate"},
+						{"group": "Library","name": "JAXB"},
+						{"group": "Language","name": "Client-Side Javascript"},
+						{"group": "Library","name": "JQuery"},
+						{"group": "Library","name": "Ajax"},
+						{"group": "Library","name": "Junit"},
+						{"group": "Server","name": "JBoss"},
+						{"group": "Tool-CI","name": "Sonarqube"},
+						{"group": "Tool-CI","name": "Checkstyle"},
+						{"group": "Tool-CI","name": "PMD"},
+						{"group": "IDE","name": "Eclipse"},
+						{"group": "Tool-Build-Script","name": "Maven"},
+						{"group": "Tool-Build-CD","name": "Jenkins"},
+						{"group": "Database-Rdbms", "name":"MS Sql Server"},
+						{"group": "Language","name":"SQL"}
+					],
+					"responsibilities": ["Develop and build", "Unit Test"]
+				},
+				{
+					"name": "ebay CarAd",
+					"client": "Ebay",
+					"from": "December 2008",
+					"to": "August 2010",
+					"skill": [
+						{"group": "Language","name": "Java"},
+						{"group": "Framework", "name":"Spring"},
+						{"group": "Library", "name":"Tapestry"},
+						{"group": "Library", "name":"Freemarker"},
+						{"group": "Library","name": "Hibernate"},
+						{"group": "Library","name": "Apache Axis"},
+						{"group": "Language","name": "Client-Side Javascript"},
+						{"group": "Library","name": "Ajax"},
+						{"group": "Library","name": "Junit"},
+						{"group": "Server","name": "Tomcat"},
+						{"group": "Tool-CI","name": "Checkstyle"},
+						{"group": "Tool-CI","name": "PMD"},
+						{"group": "Tool-CI","name": "Cobertura"},
+						{"group": "IDE","name": "Eclipse"},
+						{"group": "Tool-Build-Script","name": "ANT"},
+						{"group": "Language","name":"SQL"},
+						{"group": "Database-Rdbms", "name":"MS Sql Server"}
+					],
+					"responsibilities": ["Develop and build", "Unit Test"]
+				},
+				{
+					"name": "Telephia",
+					"client": "Nielson mobile",
+					"from": "September 2006",
+					"to": "November 2008",
+					"skill": [
+						{"group": "Language","name": "Java"},
+						{"group": "Framework", "name":"Struts 1.2.7"},
+						{"group": "Library", "name":"Hibernate"},
+						{"group": "Library", "name":"JSP"},
+						{"group": "Library","name": "Apache Axis"},
+						{"group": "Language","name": "Client-Side Javascript"},
+						{"group": "Library","name": "Junit"},
+						{"group": "Library","name": "Cactus"},
+						{"group": "Library","name": "StrutsTestCase"},
+						{"group": "Library","name": "JMock"},
+						{"group": "Server","name": "JBoss"},
+						{"group": "Tool-CI","name": "Checkstyle"},
+						{"group": "Tool-CI","name": "PMD"},
+						{"group": "Tool-CI","name": "Cobertura"},
+						{"group": "IDE","name": "Eclipse"},
+						{"group": "Tool-Build-Script","name": "ANT"},
+						{"group": "Database-Rdbms", "name":"MS Sql Server"},
+						{"group": "Language","name":"SQL"},
+						{"group": "Tool-Build-CD","name": "CruiseControl"}
+					],
+					"responsibilities": ["Develop and build", "Unit Test"]
+				}
+			]
+		},
+		{
+			"name": "Tata Consultancy Services",
+			"from":"June 2004",
+			"to":"June 2006",
+			"role": [{
+					"name": "Developer Trainee",
+					"from": "June 2004",
+					"to": "May 2005"
+				},
+				{
+					"name": "Junior Developer",
+					"from": "June 2005",
+					"to": "June 2006"
+				}
+			],
+			"responsibilities": "Test data",
+			"project": [{
+					"name": "Corporate Audit Staff",
+					"client": "General Electrics",
+					"from": "May 2005",
+					"to": "June 2006",
+					"skill": [
+						{"group": "Language","name": "PHP"},
+						{"group": "Language","name": "Client-Side Javascript"},
+						{"group": "Language","name": "Html"},
+						{"group": "Language","name": "Css"},
+						{"group": "Language","name":"SQL"},
+						{"group": "Server","name": "Apache Http Server"},
+						{"group": "Database-Rdbms", "name":"MS Sql Server"}
+						
+					],
+					"responsibilities": ["Develop and build", "Unit Test"]
+				},
+				{
+					"name": "IPMS++",
+					"client": "Tata Consultancy Services",
+					"from": "June 2004",
+					"to": "April 2005",
+					"skill": [
+						{"group": "Language","name": "ASP"},
+						{"group": "Language","name": "Client-Side Javascript"},
+						{"group": "Language","name": "Html"},
+						{"group": "Language","name": "Css"},
+						{"group": "Language","name":"SQL"},
+						{"group": "Server","name": "IIS"},
+						{"group": "Database-Rdbms", "name":"MS Sql Server"}
+					],
+					"responsibilities": ["Develop and build", "Unit Test"]
+				}
+			]
+		}
+	],
+
+	"strengths": [{
+		"type": "Technical",
+		"comments": ["Keen eye on quality", "Ability to scale up quickly"]
+	}]
+
+
+}
