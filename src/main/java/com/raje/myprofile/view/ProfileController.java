@@ -1,6 +1,5 @@
 package com.raje.myprofile.view;
 
-import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -32,7 +31,7 @@ public class ProfileController {
 			logger.info("Profile Data : " + profile.toString());
 			logger.info("Skill Data : " + d3SkillData.toString());
 			result = "home";
-		} catch (IOException e) {
+		} catch (Exception e) {
 			logger.log(Level.SEVERE, "Exception when getting profile data", e);
 			result = "error";
 		}

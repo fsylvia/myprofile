@@ -21,15 +21,6 @@ public class Skill {
 	@JsonIgnore
 	private float size;
 	
-	
-	/*@JsonIgnore
-	public Skill(String type, String name, float size) {
-		super();
-		this.type = type;
-		this.name = name;
-		this.size = size;
-	}
-*/
 	public void addSize(float size) {
 		this.size +=size;
 	};
