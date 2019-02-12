@@ -3,7 +3,6 @@ package com.raje.myprofile.service;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertTrue;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +11,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.raje.myprofile.exception.ServiceException;
 import com.raje.myprofile.model.Company;
 import com.raje.myprofile.model.D3Skills;
 import com.raje.myprofile.model.Profile;
@@ -20,6 +20,7 @@ import com.raje.myprofile.model.Skill;
 
 /**
  * Tests the PropertyService class
+ * todo : add negative test cases
  * 
  * @author fsylvia
  *
@@ -33,7 +34,7 @@ public class PropertyServiceTest {
 	}
 
 	@Test
-	public void testGetProfileData() throws IOException {
+	public void testGetProfileData() throws ServiceException {
 		Profile profile = service.getProfileData();
 		assertThat(profile).isNotNull();
 	}

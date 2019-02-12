@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.raje.myprofile.exception.ServiceException;
 import com.raje.myprofile.model.D3Skills;
 import com.raje.myprofile.model.Profile;
 import com.raje.myprofile.model.Project;
@@ -36,11 +37,10 @@ public class PropertyService {
 	 * Populate {@link Profile} object from JSON
 	 * 
 	 * @return {@link Profile}
-	 * @throws IOException
+	 * @throws ServiceException
 	 * 
 	 */
-	public Profile getProfileData()  {
-		// todo : add exception handling
+	public Profile getProfileData() throws ServiceException {
 		logger.info("Invoking getProfileData()");
 		ObjectMapper objectMapper = new ObjectMapper();
 		try {
@@ -49,11 +49,16 @@ public class PropertyService {
 			return profile;
 		} catch (IOException e) {
 			logger.log(Level.SEVERE, "Unexpected error in getProfileData : ", e);
-			return null;
+			throw new ServiceException("Unexpected error in getProfileData", e);
 		}
 	}
 
-	// todo: move to date utils
+	/**
+	 * Get difference between from and to year in no of months format
+	 * @param fromMonthYear
+	 * @param toMonthYear
+	 * @return float - num of months between from and to years
+	 */
 	private static float getDiffInYear(String fromMonthYear, String toMonthYear) {
 		DateTimeFormatter monthYearFormat = DateTimeFormatter.ofPattern("MMMM uuuu");
 		YearMonth from = YearMonth.parse(fromMonthYear, monthYearFormat);
@@ -62,7 +67,12 @@ public class PropertyService {
 		return months;
 	}
 
-	public List<Skill> getSkills(Profile profile) {
+	/**
+	 * Get list of all skills in the profile
+	 * @param profile
+	 * @return
+	 */
+	private List<Skill> getSkills(Profile profile) {
 		List<Skill> skillSet = new ArrayList<>();
 		List<Project> projects = new ArrayList<Project>();
 		profile.getCompany().forEach((organization) -> {
@@ -117,7 +127,7 @@ public class PropertyService {
 	 * @param profile
 	 * @return String
 	 */
-	public String skillsToJson(Profile profile) {
+	public String skillsToJson(Profile profile)throws ServiceException {
 		logger.info("Invoking skillsToJson with profile : " + profile);
 		D3Skills skills = formatSkills(profile);
 		String skillJson = "";
@@ -126,10 +136,11 @@ public class PropertyService {
 			skillJson = mapper.writeValueAsString(skills);
 		} catch (JsonProcessingException e) {
 			logger.log(Level.SEVERE, "Unexpected error in skillsToJson : ", e);
-			// todo : throw common excetion to ui
+			throw new ServiceException("Unexpected error in skillsToJson", e);
 		}
 		logger.info("Completed skillsToJson: " + skillJson);
 		return skillJson;
 	}
 
+	
 }
