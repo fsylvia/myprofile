@@ -25,7 +25,7 @@ var skillJson = eval('('+'${skill}'+')');
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">${profile.personal.name }</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile.jpg" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile.png" alt="">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,12 +45,12 @@ var skillJson = eval('('+'${skill}'+')');
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
         </li>
-        <li class="nav-item">
+       <!--  <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+        <!-- <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>
@@ -66,14 +66,14 @@ var skillJson = eval('('+'${skill}'+')');
         </div>
         <div>${profile.personal.visa }</div>
         <p class="lead mb-5">${profile.personal.pitch }</p>
-        <div class="social-icons">
+       <!--  <div class="social-icons">
           <a href="#">
             <i class="fab fa-linkedin"></i>
           </a>
           <a href="#">
             <i class="fab fa-github"></i>
           </a>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -126,10 +126,11 @@ var skillJson = eval('('+'${skill}'+')');
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <h2 class="mb-5">Skills</h2>
-        
-        <svg></svg>
+        <div class="chart">
+        	<svg></svg>
+        </div>
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+       <!--  <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
             <i class="fab fa-html5"></i>
@@ -167,9 +168,9 @@ var skillJson = eval('('+'${skill}'+')');
           <li class="list-inline-item">
             <i class="fab fa-npm"></i>
           </li>
-        </ul>
+        </ul> -->
 
-        <div class="subheading mb-3">Paradigms</div>
+       <!--  <div class="subheading mb-3">Paradigms</div>
         <ul class="fa-ul mb-0">
           <li>
             <i class="fa-li fa fa-check"></i>
@@ -180,11 +181,11 @@ var skillJson = eval('('+'${skill}'+')');
           <li>
             <i class="fa-li fa fa-check"></i>
             Agile Development &amp; Scrum</li>
-        </ul>
+        </ul> -->
       </div>
     </section>
 
-    <hr class="m-0">
+    <!-- <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
@@ -192,9 +193,9 @@ var skillJson = eval('('+'${skill}'+')');
         <p>Fill details here</p>
         <p class="mb-0">Here too</p>
       </div>
-    </section>
+    </section> -->
 
-    <hr class="m-0">
+   <!--  <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
       <div class="w-100">
@@ -205,7 +206,7 @@ var skillJson = eval('('+'${skill}'+')');
             Fill details here </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
   </div>
 
